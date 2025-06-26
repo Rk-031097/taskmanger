@@ -13,6 +13,11 @@ class TaskPagination(PageNumberPagination):
 
 
 class TaskViewSet(viewsets.ModelViewSet):
+    """
+    A viewset for viewing and editing Task instances.
+    This viewset provides CRUD operations for the Task model using Django REST Framework's ModelViewSet.
+    It supports listing, creating, retrieving, updating, and deleting tasks."""
+
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -20,6 +25,8 @@ class TaskViewSet(viewsets.ModelViewSet):
 
 
 class RegisterView(CreateAPIView):
+    """This view handles user registration."""
+
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [permissions.AllowAny]

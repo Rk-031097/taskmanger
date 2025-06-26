@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 
 
 class TaskSerializer(serializers.ModelSerializer):
+    """Serializer for the Task model."""
+
     class Meta:
         model = Task
         fields = "__all__"
