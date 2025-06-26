@@ -36,14 +36,14 @@ pip install -r requirements.txt
    ```
 
 ## API Endpoints
-- `POST /register/` — Register a new user
-- `POST /login/` — Obtain JWT token
-- `POST /refresh/` — Refresh JWT token
-- `GET /tasks/` — List tasks (auth required)
-- `POST /tasks/` — Create task (auth required)
-- `GET /tasks/{id}/` — Retrieve task (auth required)
-- `PATCH /tasks/{id}/` — Update task (auth required)
-- `DELETE /tasks/{id}/` — Delete task (auth required)
+- `POST /api/register/` — Register a new user
+- `POST /api/login/` — Obtain JWT token
+- `POST /api/refresh/` — Refresh JWT token
+- `GET /api/tasks/` — List tasks (auth required)
+- `POST /api/tasks/` — Create task (auth required)
+- `GET /api/tasks/{id}/` — Retrieve task (auth required)
+- `PATCH /api/tasks/{id}/` — Update task (auth required)
+- `DELETE /api/tasks/{id}/` — Delete task (auth required)
 
 ## Running Tests
 Run all API and unit tests with:
