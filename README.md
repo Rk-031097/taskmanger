@@ -14,11 +14,6 @@ This a Task mangement project here user can register and login and create tasks 
 
 ## Requirements
 - Python 3.11+
-- Django 5.2.3
-- djangorestframework
-- djangorestframework-simplejwt
-- drf-yasg
-
 Install all dependencies with:
 
 ```
